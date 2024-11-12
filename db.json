@@ -1,0 +1,85 @@
+{
+    "coupons": [
+      {
+        "id": 1,
+        "code": "JUMIA10",
+        "brand": "Jumia Kenya",
+        "discount": 10,
+        "expiry": "2024-12-31",
+        "description": "Get 10% off on your first order at Jumia Kenya."
+      },
+      {
+        "id": 2,
+        "code": "NAIROBI20",
+        "brand": "Nairobi Mall",
+        "discount": 20,
+        "expiry": "2024-11-30",
+        "description": "Save 20% on all purchases at Nairobi Mall."
+      },
+      {
+        "id": 3,
+        "code": "CITAM50",
+        "brand": "CITAM Supermarket",
+        "discount": 50,
+        "expiry": "2024-12-25",
+        "description": "Get up to 50% off on select groceries at CITAM Supermarket."
+      },
+      {
+        "id": 4,
+        "code": "KQFLY25",
+        "brand": "Kenya Airways",
+        "discount": 25,
+        "expiry": "2025-01-15",
+        "description": "Save 25% on all international flights with Kenya Airways."
+      },
+      {
+        "id": 5,
+        "code": "EQUITEL30",
+        "brand": "Equitel",
+        "discount": 30,
+        "expiry": "2024-11-30",
+        "description": "Enjoy 30% off on all Equitel data bundles."
+      },
+      {
+        "id": 6,
+        "code": "SHELL5",
+        "brand": "Shell Kenya",
+        "discount": 5,
+        "expiry": "2025-03-31",
+        "description": "Save 5% on all fuel purchases at Shell Kenya stations."
+      },
+      {
+        "id": 7,
+        "code": "FAIRVIEW15",
+        "brand": "Fairview Coffee",
+        "discount": 15,
+        "expiry": "2025-05-15",
+        "description": "Get 15% off on your next purchase at Fairview Coffee."
+      },
+      {
+        "id": 8,
+        "code": "BEBA5",
+        "brand": "BebaPay",
+        "discount": 5,
+        "expiry": "2025-02-28",
+        "description": "Get a 5% discount when you pay via BebaPay at any retail store."
+      },
+      {
+        "id": 9,
+        "code": "ZETECH10",
+        "brand": "Zetech University",
+        "discount": 10,
+        "expiry": "2025-06-01",
+        "description": "Save 10% on tuition fees for new students at Zetech University."
+      },
+      {
+        "id": 10,
+        "code": "NIKENIKE15",
+        "brand": "Nike Kenya",
+        "discount": 15,
+        "expiry": "2024-12-31",
+        "description": "Enjoy 15% off on Nike products at Nike stores across Kenya."
+      }
+    ]
+  }
+  
