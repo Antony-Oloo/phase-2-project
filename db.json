@@ -1,7 +1,7 @@
 {
   "coupons": [
     {
-      "id": 1,
+      "id": "1",
       "code": "JUMIA10",
       "brand": "Jumia Kenya",
       "discount": 10,
@@ -10,7 +10,7 @@
       "image": "/images/coupons/1.jpg"
     },
     {
-      "id": 2,
+      "id": "2",
       "code": "NAIROBI20",
       "brand": "Nairobi Mall",
       "discount": 20,
@@ -19,7 +19,7 @@
       "image": "/images/coupons/2.jpg"
     },
     {
-      "id": 3,
+      "id": "3",
       "code": "CITAM50",
       "brand": "CITAM Supermarket",
       "discount": 50,
@@ -28,7 +28,7 @@
       "image": "/images/coupons/3.jpg"
     },
     {
-      "id": 4,
+      "id": "4",
       "code": "KQFLY25",
       "brand": "Kenya Airways",
       "discount": 25,
@@ -37,7 +37,7 @@
       "image": "/images/coupons/4.jpg"
     },
     {
-      "id": 5,
+      "id": "5",
       "code": "EQUITEL30",
       "brand": "Equitel",
       "discount": 30,
@@ -46,7 +46,7 @@
       "image": "/images/coupons/5.jpg"
     },
     {
-      "id": 6,
+      "id": "6",
       "code": "SHELL5",
       "brand": "Shell Kenya",
       "discount": 5,
@@ -55,7 +55,7 @@
       "image": "/images/coupons/6.jpg"
     },
     {
-      "id": 7,
+      "id": "7",
       "code": "FAIRVIEW15",
       "brand": "Fairview Coffee",
       "discount": 15,
@@ -64,7 +64,7 @@
       "image": "/images/coupons/7.jpg"
     },
     {
-      "id": 8,
+      "id": "8",
       "code": "BEBA5",
       "brand": "BebaPay",
       "discount": 5,
@@ -73,7 +73,7 @@
       "image": "/images/coupons/8.jpg"
     },
     {
-      "id": 9,
+      "id": "9",
       "code": "ZETECH10",
       "brand": "Zetech University",
       "discount": 10,
@@ -82,7 +82,7 @@
       "image": "/images/coupons/9.jpg"
     },
     {
-      "id": 10,
+      "id": "10",
       "code": "NIKENIKE15",
       "brand": "Nike Kenya",
       "discount": 15,
@@ -91,24 +91,18 @@
       "image": "/images/coupons/10.jpg"
     },
     {
-      "id": "9f39",
-      "code": "",
-      "discount": "",
-      "expiry": ""
-    },
-    {
-      "id": "c78a",
-      "code": "Hjskedhf",
+      "id": "bfce",
+      "code": "ASK10",
       "discount": "15",
-      "expiry": "2024-05-24",
-      "brand": "ask designers"
+      "expiry": "2025-11-30",
+      "brand": "ASK DESIGNERS"
     },
     {
-      "id": "4451",
-      "code": "MLOLONGO 10",
-      "discount": "25",
-      "expiry": "2024-11-13",
-      "brand": "MLOLONGO STARS"
+      "id": "fc37",
+      "code": "ASK10",
+      "discount": "15",
+      "expiry": "2025-11-30",
+      "brand": "ASK DESIGNERS"
     }
   ]
 }
