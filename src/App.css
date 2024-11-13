@@ -31,8 +31,11 @@ nav a:hover {
 
 /* Coupon List Styles */
 .coupon-list {
-  padding: 20px;
-  text-align: center;
+  display: flex;
+  flex-wrap: wrap; /* This ensures the coupons wrap to the next line when necessary */
+  gap: 20px; /* Adds space between the coupon cards */
+  justify-content: center; /* Centers the coupon cards horizontally */
+  padding: 20px; /* Adds some padding around the container */
 }
 
 .coupon-cards {
@@ -164,5 +167,20 @@ form {
   .nav-link {
     font-size: 1.2em;
   }
+}
+.coupon-card {
+  background-color: #FFFFFF;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  overflow: hidden;  /* Prevents the logo from overflowing */
+}
+
+.coupon-card:hover {
+  transform: translateY(-10px);
 }
 

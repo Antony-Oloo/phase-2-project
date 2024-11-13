@@ -1,9 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-export function CouponCard({ coupon }) {
+function CouponCard({ coupon }) {
+  const logoUrl = `/images/${coupon.brand}-logo.png`;
+
   return (
     <div className="coupon-card">
+      <img src={logoUrl} alt={`${coupon.brand} logo`} className="coupon-logo" />
       <h3 className="coupon-code">{coupon.code}</h3>
       <p className="coupon-discount">{coupon.discount}% Off</p>
       <p className="coupon-expiry">Expires: {coupon.expiry}</p>
@@ -11,3 +14,5 @@ export function CouponCard({ coupon }) {
     </div>
   );
 }
+
+export default CouponCard; 

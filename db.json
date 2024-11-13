@@ -95,6 +95,13 @@
       "code": "",
       "discount": "",
       "expiry": ""
+    },
+    {
+      "id": "c78a",
+      "code": "Hjskedhf",
+      "discount": "15",
+      "expiry": "2024-05-24",
+      "brand": "ask designers"
     }
   ]
 }
