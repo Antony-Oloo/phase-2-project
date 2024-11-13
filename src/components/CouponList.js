@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import CouponCard from './CouponCard';
 
 function CouponList() {
   const [coupons, setCoupons] = useState([]);
@@ -11,15 +11,13 @@ function CouponList() {
   }, []);
 
   return (
-    <div>
+    <div className="coupon-list">
       <h2>Available Coupons</h2>
-      <ul>
+      <div className="coupon-cards">
         {coupons.map(coupon => (
-          <li key={coupon.id}>
-            <Link to={`/coupons/${coupon.id}`}>{coupon.code} - {coupon.discount}% Off</Link>
-          </li>
+          <CouponCard key={coupon.id} coupon={coupon} />
         ))}
-      </ul>
+      </div>
     </div>
   );
 }

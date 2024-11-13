@@ -5,6 +5,8 @@ import CouponList from './components/CouponList';
 import CouponForm from './components/CouponForm';
 import CouponDetail from './components/CouponDetail';
 import About from './components/About';
+import './App.css';  
+
 
 function App() {
   return (
@@ -12,8 +14,8 @@ function App() {
       <div className="App">
         <Navbar />
         <Routes>
-          <Route path="/" element={<CouponList />} /> |
-          <Route path="/add" element={<CouponForm />} /> |
+          <Route path="/" element={<CouponList />} /> 
+          <Route path="/add" element={<CouponForm />} /> 
           <Route path="/coupons/:id" element={<CouponDetail />} /> |
           <Route path="/about" element={<About />} />
         </Routes>
