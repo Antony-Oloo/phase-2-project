@@ -9,7 +9,7 @@ function Login({ setIsAdmin }) {
   const handleLogin = (e) => {
     e.preventDefault();
 
-    // Simple hardcoded admin credentials
+    // Simple hardcoded credentials for now. 
     if (username === 'admin' && password === 'password') {
       setIsAdmin(true);  // Set the admin state to true
       navigate('/add');  // Redirect to the Add Coupon page after login
