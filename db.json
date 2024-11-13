@@ -102,6 +102,13 @@
       "discount": "15",
       "expiry": "2024-05-24",
       "brand": "ask designers"
+    },
+    {
+      "id": "4451",
+      "code": "MLOLONGO 10",
+      "discount": "25",
+      "expiry": "2024-11-13",
+      "brand": "MLOLONGO STARS"
     }
   ]
 }
