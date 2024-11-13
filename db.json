@@ -1,85 +1,109 @@
 {
-    "coupons": [
-      {
-        "id": 1,
-        "code": "JUMIA10",
-        "brand": "Jumia Kenya",
-        "discount": 10,
-        "expiry": "2024-12-31",
-        "description": "Get 10% off on your first order at Jumia Kenya."
-      },
-      {
-        "id": 2,
-        "code": "NAIROBI20",
-        "brand": "Nairobi Mall",
-        "discount": 20,
-        "expiry": "2024-11-30",
-        "description": "Save 20% on all purchases at Nairobi Mall."
-      },
-      {
-        "id": 3,
-        "code": "CITAM50",
-        "brand": "CITAM Supermarket",
-        "discount": 50,
-        "expiry": "2024-12-25",
-        "description": "Get up to 50% off on select groceries at CITAM Supermarket."
-      },
-      {
-        "id": 4,
-        "code": "KQFLY25",
-        "brand": "Kenya Airways",
-        "discount": 25,
-        "expiry": "2025-01-15",
-        "description": "Save 25% on all international flights with Kenya Airways."
-      },
-      {
-        "id": 5,
-        "code": "EQUITEL30",
-        "brand": "Equitel",
-        "discount": 30,
-        "expiry": "2024-11-30",
-        "description": "Enjoy 30% off on all Equitel data bundles."
-      },
-      {
-        "id": 6,
-        "code": "SHELL5",
-        "brand": "Shell Kenya",
-        "discount": 5,
-        "expiry": "2025-03-31",
-        "description": "Save 5% on all fuel purchases at Shell Kenya stations."
-      },
-      {
-        "id": 7,
-        "code": "FAIRVIEW15",
-        "brand": "Fairview Coffee",
-        "discount": 15,
-        "expiry": "2025-05-15",
-        "description": "Get 15% off on your next purchase at Fairview Coffee."
-      },
-      {
-        "id": 8,
-        "code": "BEBA5",
-        "brand": "BebaPay",
-        "discount": 5,
-        "expiry": "2025-02-28",
-        "description": "Get a 5% discount when you pay via BebaPay at any retail store."
-      },
-      {
-        "id": 9,
-        "code": "ZETECH10",
-        "brand": "Zetech University",
-        "discount": 10,
-        "expiry": "2025-06-01",
-        "description": "Save 10% on tuition fees for new students at Zetech University."
-      },
-      {
-        "id": 10,
-        "code": "NIKENIKE15",
-        "brand": "Nike Kenya",
-        "discount": 15,
-        "expiry": "2024-12-31",
-        "description": "Enjoy 15% off on Nike products at Nike stores across Kenya."
-      }
-    ]
-  }
-  
+  "Coupons": [
+    {
+      "name": "Jumia",
+      "coupon": "JUMIA10",
+      "discount": "10% off on first purchase",
+      "validity": "2024-12-31",
+      "image": "/images/jumia_logo.png"
+    },
+    {
+      "name": "Kilimall",
+      "coupon": "KILIMALL15",
+      "discount": "15% off electronics",
+      "validity": "2024-11-30",
+      "image": "/images/kilimall_logo.png"
+    },
+    {
+      "name": "Tusker",
+      "coupon": "TUSKER25",
+      "discount": "25% off on Tusker products",
+      "validity": "2024-12-20",
+      "image": "/images/tusker_logo.png"
+    },
+    {
+      "name": "Safari Lounge",
+      "coupon": "SAFARI5",
+      "discount": "5% off on hotel bookings",
+      "validity": "2024-11-25",
+      "image": "/images/safari_lounge_logo.png"
+    },
+    {
+      "name": "Naivas",
+      "coupon": "NAIVAS30",
+      "discount": "KSh 30 off grocery purchases over KSh 1000",
+      "validity": "2024-12-10",
+      "image": "/images/naivas_logo.png"
+    },
+    {
+      "name": "Carrefour",
+      "coupon": "CARREFOUR50",
+      "discount": "KSh 50 off on a KSh 1500 purchase",
+      "validity": "2024-12-01",
+      "image": "/images/carrefour_logo.png"
+    },
+    {
+      "name": "Zetu",
+      "coupon": "ZETU25",
+      "discount": "25% off fashion and accessories",
+      "validity": "2024-11-30",
+      "image": "/images/zetu_logo.png"
+    },
+    {
+      "name": "Chandarana",
+      "coupon": "CHANDARANA10",
+      "discount": "10% off on fresh produce",
+      "validity": "2024-12-05",
+      "image": "/images/chandarana_logo.png"
+    },
+    {
+      "name": "Twiga Foods",
+      "coupon": "TWIGA10",
+      "discount": "10% off bulk purchases",
+      "validity": "2024-12-15",
+      "image": "/images/twiga_foods_logo.png"
+    },
+    {
+      "name": "Zumi",
+      "coupon": "ZUMI20",
+      "discount": "20% off on all skincare products",
+      "validity": "2024-12-01",
+      "image": "/images/zumi_logo.png"
+    },
+    {
+      "name": "Quiver",
+      "coupon": "QUIVER10",
+      "discount": "10% off restaurant bookings",
+      "validity": "2024-11-20",
+      "image": "/images/quiver_logo.png"
+    },
+    {
+      "name": "Sportpesa",
+      "coupon": "SPORTPESA100",
+      "discount": "KSh 100 bonus on first bet",
+      "validity": "2024-12-31",
+      "image": "/images/sportpesa_logo.png"
+    },
+    {
+      "name": "Betika",
+      "coupon": "BETIKA50",
+      "discount": "50% bonus on first deposit",
+      "validity": "2024-11-28",
+      "image": "/images/betika_logo.png"
+    },
+    {
+      "name": "Tuskys",
+      "coupon": "TUSKYS100",
+      "discount": "KSh 100 off on KSh 2000 spend",
+      "validity": "2024-12-10",
+      "image": "/images/tuskys_logo.png"
+    },
+    {
+      "name": "Subaru Kenya",
+      "coupon": "SUBARU20",
+      "discount": "20% off selected Subaru models",
+      "validity": "2024-12-15",
+      "image": "/images/subaru_kenya_logo.png"
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import CouponCard from './CouponCard';
+import { CouponCard } from './CouponCard';  // Make sure to use the named import here
 
 function CouponList() {
   const [coupons, setCoupons] = useState([]);

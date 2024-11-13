@@ -3,15 +3,16 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f9;
+  background-color: #FFEB3B;  /* Soft Yellow for background */
+  color: #333;  /* Dark gray text for good contrast */
 }
 
 h2, h3 {
-  color: #333;
+  color: #333;  /* Dark gray for headings */
 }
 
 nav {
-  background-color: #333;
+  background-color: #333;  /* Dark navbar for contrast */
   padding: 10px;
   display: flex;
   justify-content: space-around;
@@ -41,8 +42,9 @@ nav a:hover {
   justify-content: center;
 }
 
+/* Coupon Card Styles */
 .coupon-card {
-  background-color: #fff;
+  background-color: #FFFFFF;  /* White background for the card */
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 20px;
@@ -53,31 +55,32 @@ nav a:hover {
 }
 
 .coupon-card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-10px);  /* Slight lift on hover */
 }
 
+/* Coupon Code Styles */
 .coupon-code {
   font-size: 24px;
   font-weight: bold;
-  color: #007bff;
+  color: #FF5722;  /* Bright Orange-Red color for the code */
 }
 
 .coupon-discount {
   font-size: 18px;
   margin: 10px 0;
-  color: #28a745;
+  color: #4CAF50;  /* Green for the discount percentage */
 }
 
 .coupon-expiry {
   font-size: 14px;
-  color: #999;
+  color: #888;  /* Lighter gray for expiry */
 }
 
 .coupon-link {
   display: inline-block;
   margin-top: 10px;
   text-decoration: none;
-  color: #007bff;
+  color: #2196F3;  /* Blue color for the link */
 }
 
 .coupon-link:hover {
@@ -98,23 +101,3 @@ form {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-input {
-  padding: 10px;
-  font-size: 16px;
-  width: 100%;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-}
-
-button {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #0056b3;
-}
