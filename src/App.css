@@ -226,4 +226,35 @@ button {
 button:hover {
   background-color: #45a049;
 }
+/* CSS to Style Coupon Detail Page */
+.coupon-detail {
+  text-align: center;
+  margin: 20px;
+}
+
+.coupon-image {
+  max-width: 300px;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #4CAF50; /* Green button */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
 
