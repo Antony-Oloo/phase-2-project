@@ -31,24 +31,26 @@ function CouponDetail() {
   };
 
   return (
-    <div>
-      <h3>{coupon.code}</h3>
-      <p>{coupon.discount}% off</p>
-      <p>Expires: {coupon.expiry}</p>
-      <p>{coupon.description}</p>
+    <div className="coupon-detail-container">
+      <div className="coupon-detail">
+        <h3>{coupon.code}</h3>
+        <p>{coupon.discount}% off</p>
+        <p>Expires: {coupon.expiry}</p>
+        <p>{coupon.description}</p>
 
-      <button onClick={generateRandomCode}>Get Coupon</button>
+        <button onClick={generateRandomCode}>Get Coupon</button>
 
-      {showModal && (
-        <div className="modal">
-          <div className="modal-content">
-            <span className="close" onClick={() => setShowModal(false)}>&times;</span>
-            <h4>Scan to Claim Discount</h4>
-            <QRCodeCanvas value={qrCode} size={256} /> {/* Updated to QRCodeCanvas */}
-            <p>Your unique code: {qrCode}</p>
+        {showModal && (
+          <div className="modal">
+            <div className="modal-content">
+              <span className="close" onClick={() => setShowModal(false)}>&times;</span>
+              <h4>Scan to Claim Discount</h4>
+              <QRCodeCanvas value={qrCode} size={256} />
+              <p>Your unique code: {qrCode}</p>
+            </div>
           </div>
-        </div>
-      )}
+        )}
+      </div>
     </div>
   );
 }
