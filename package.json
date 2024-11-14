@@ -1,7 +1,7 @@
 {
   "name": "phase-2-project",
   "version": "0.1.0",
-  "homepage": "antony-oloo.github.io/phase-2-project/",
+  "homepage": "https://antony-oloo.github.io/phase-2-project/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
