@@ -7,7 +7,7 @@
       "discount": 10,
       "expiry": "2024-12-31",
       "description": "Get 10% off on your first order at Jumia Kenya.",
-      "image": "/images/coupons/1.jpg"
+      "image": "./images/jumia.png"
     },
     {
       "id": "2",
@@ -16,7 +16,7 @@
       "discount": 20,
       "expiry": "2024-11-30",
       "description": "Save 20% on all purchases at Nairobi Mall.",
-      "image": "/images/coupons/2.jpg"
+      "image": "./images/Nairobi.png"
     },
     {
       "id": "3",
@@ -34,7 +34,7 @@
       "discount": 25,
       "expiry": "2025-01-15",
       "description": "Save 25% on all international flights with Kenya Airways.",
-      "image": "/images/coupons/4.png"
+      "image": "./images/k-airways.png"
     },
     {
       "id": "5",
@@ -52,7 +52,7 @@
       "discount": 5,
       "expiry": "2025-03-31",
       "description": "Save 5% on all fuel purchases at Shell Kenya stations.",
-      "image": "/images/coupons/6.jpg"
+      "image": "./images/shell.png"
     },
     {
       "id": "7",
@@ -61,7 +61,7 @@
       "discount": 15,
       "expiry": "2025-05-15",
       "description": "Get 15% off on your next purchase at Fairview Coffee.",
-      "image": "/images/coupons/7.jpg"
+      "image": "./images/fairview.png"
     },
     {
       "id": "8",
@@ -70,7 +70,7 @@
       "discount": 5,
       "expiry": "2025-02-28",
       "description": "Get a 5% discount when you pay via BebaPay at any retail store.",
-      "image": "/images/coupons/8.jpg"
+      "image": "./public/images/beba.png"
     },
     {
       "id": "9",
@@ -79,7 +79,7 @@
       "discount": 10,
       "expiry": "2025-06-01",
       "description": "Save 10% on tuition fees for new students at Zetech University.",
-      "image": "/images/coupons/9.jpg"
+      "image": "./images/zetech.png"
     },
     {
       "id": "10",
@@ -88,7 +88,7 @@
       "discount": 15,
       "expiry": "2024-12-31",
       "description": "Enjoy 15% off on Nike products at Nike stores across Kenya.",
-      "image": "/images/coupons/10.jpg"
+      "image": "./images/Nike.jpeg"
     },
     {
       "id": "bfce",
