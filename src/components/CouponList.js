@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import CouponCard from './CouponCard';  // Now importing the default export
+import CouponCard from './CouponCard';  // Import CouponCard
 
 function CouponList() {
   const [coupons, setCoupons] = useState([]);
@@ -12,7 +12,7 @@ function CouponList() {
   
   return (
     <div>
-      <h2>Available Coupons</h2>
+      <h2 className="centered-title"> Availlable Coupons from favorite Brands</h2>
       <div className="coupon-list">
         {coupons.map((coupon) => (
           <CouponCard key={coupon.id} coupon={coupon} />
@@ -23,3 +23,4 @@ function CouponList() {
 }
 
 export default CouponList;
+

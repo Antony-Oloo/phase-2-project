@@ -89,20 +89,6 @@
       "expiry": "2024-12-31",
       "description": "Enjoy 15% off on Nike products at Nike stores across Kenya.",
       "image": "./images/Nike.jpeg"
-    },
-    {
-      "id": "bfce",
-      "code": "ASK10",
-      "discount": "15",
-      "expiry": "2025-11-30",
-      "brand": "ASK DESIGNERS"
-    },
-    {
-      "id": "fc37",
-      "code": "ASK10",
-      "discount": "15",
-      "expiry": "2025-11-30",
-      "brand": "ASK DESIGNERS"
     }
   ]
 }

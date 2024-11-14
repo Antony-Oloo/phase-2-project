@@ -9,10 +9,10 @@ function Login({ setIsAdmin }) {
   const handleLogin = (e) => {
     e.preventDefault();
 
-    // Simple hardcoded credentials for now. 
+    // Simple hardcoded credentials for now
     if (username === 'admin' && password === 'password') {
-      setIsAdmin(true);  // Set the admin state to true
-      navigate('/add');  // Redirect to the Add Coupon page after login
+      setIsAdmin(true); // Set the admin state to true
+      navigate('/admin-dashboard'); // Redirect to the Admin Dashboard page after login
     } else {
       alert('Invalid credentials');
     }
@@ -20,19 +20,21 @@ function Login({ setIsAdmin }) {
 
   return (
     <div className="login-form">
-      <h2>Admin Login</h2>
+      <h2 className="centered-title"> Admin Login</h2>
       <form onSubmit={handleLogin}>
         <input
           type="text"
           placeholder="Username"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
+          required
         />
         <input
           type="password"
           placeholder="Password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
+          required
         />
         <button type="submit">Login</button>
       </form>
