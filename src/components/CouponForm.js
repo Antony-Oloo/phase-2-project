@@ -13,7 +13,7 @@ function CouponForm({ addCoupon }) {
 
     const newCoupon = { ...coupon };
 
-    fetch('http://localhost:5000/coupons', {
+    fetch('https://phase-2-project-d3jv.onrender.com/coupons', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(newCoupon),

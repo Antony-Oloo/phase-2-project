@@ -5,11 +5,11 @@ function CouponList() {
   const [coupons, setCoupons] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:5000/coupons')
+    fetch('https://phase-2-project-d3jv.onrender.com/coupons')
       .then((res) => res.json())
       .then((data) => setCoupons(data));
   }, []);
-
+  
   return (
     <div>
       <h2>Available Coupons</h2>
