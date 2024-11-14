@@ -43,7 +43,7 @@
       "discount": 30,
       "expiry": "2024-11-30",
       "description": "Enjoy 30% off on all Equitel data bundles.",
-      "image": "/images/coupons/5.jpg"
+      "image": "./images/equitel.png"
     },
     {
       "id": "6",
