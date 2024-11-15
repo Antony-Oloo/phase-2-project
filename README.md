@@ -40,26 +40,6 @@ Technologies Used
 7. React DevTools
 8. Visual Studio Code
 
-                                                      Installation
-Follow these steps to run the project locally:
-
-Clone the Repository:
-
-bash
-
-git clone https://github.com/your-username/coupon-app.git
-cd coupon-app
-Install Dependencies:
-
-bash : npm install
-Run the Backend: Ensure JSON Server is installed globally:
-
-bash: npm install -g json-server ; json-server --watch db.json --port 5000
-Start the Frontend:
-
-bash : npm start
-Open in Browser: Navigate to http://localhost:3000 to use the app.
-
                                                 Usage
 Admin Dashboard
 1. Navigate to the admin section via the navbar.
@@ -76,26 +56,6 @@ Admin Dashboard
 3. Search or filter coupons by keywords or other criteria.
 4. click on get coupon to get QR code to get the coupons
 
-Project Structure
-java
-Copy code
-coupon-app/
-├── public/
-│   ├── index.html
-│   └── favicon.ico
-├── src/
-│   ├── components/
-│   │   ├── AdminDashboard.js
-│   │   ├── CouponList.js
-│   │   ├── CouponDetail.js
-│   │   └── Navbar.js
-│   ├── styles/
-│   │   └── styles.css
-│   ├── App.js
-│   ├── index.js
-│   └── db.json
-├── package.json
-└── README.md
 
 Future Improvements
 Authentication: Add user login and admin authentication.
