@@ -70,7 +70,7 @@
       "discount": 5,
       "expiry": "2025-02-28",
       "description": "Get a 5% discount when you pay via BebaPay at any retail store.",
-      "image": "./public/images/beba.png"
+      "image": "./images/beba.png"
     },
     {
       "id": "9",
