@@ -1,70 +1,104 @@
-# Getting Started with Create React App
+                                      Coupon/Discount App
+Table of Contents
+Introduction
+Features
+Technologies Used
+Installation
+Usage
+Project Structure
+Screenshots
+Future Improvements
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+Introduction
+The Coupon/Discount App is a web-based platform designed to manage discount coupons efficiently. It provides both administrators and users with the ability to add, view, and manage coupon codes and discounts, making it easier to take advantage of promotional offers.
 
-In the project directory, you can run:
+Features
+User Features
+View a list of available coupons with their details:
+Coupon code
+Discount percentage
+Expiry date
+Description
+Filter and search for specific coupons.
+View detailed information about a selected coupon.
 
-### `npm start`
+Admin Features
+1.Add new coupons to the system.
+2.Edit existing coupons.
+3.Delete coupons that are no longer valid.
+4.Manage the coupon list through a user-friendly dashboard.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Technologies Used
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Frontend: React.js
+2. Backend: JSON Server (Mock API)
+3. Styling: CSS3
+4. Icons/Assets: FontAwesome
+5. Hosting: Render (for backend)
+6. Development Tools:
+7. React DevTools
+8. Visual Studio Code
 
-### `npm test`
+                                                      Installation
+Follow these steps to run the project locally:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Clone the Repository:
 
-### `npm run build`
+bash
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+git clone https://github.com/your-username/coupon-app.git
+cd coupon-app
+Install Dependencies:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+bash : npm install
+Run the Backend: Ensure JSON Server is installed globally:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+bash: npm install -g json-server ; json-server --watch db.json --port 5000
+Start the Frontend:
 
-### `npm run eject`
+bash : npm start
+Open in Browser: Navigate to http://localhost:3000 to use the app.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+                                                Usage
+Admin Dashboard
+1. Navigate to the admin section via the navbar.
+2. Add a new coupon by filling in the form with:
+3. Coupon Code
+4. Discount Percentage
+5. Expiry Date
+6. Description
+7. View, edit, or delete coupons from the dashboard.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+                                        User Interface
+1. Browse through the list of available coupons.
+2. Click on any coupon to view its detailed information.
+3. Search or filter coupons by keywords or other criteria.
+4. click on get coupon to get QR code to get the coupons
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Project Structure
+java
+Copy code
+coupon-app/
+├── public/
+│   ├── index.html
+│   └── favicon.ico
+├── src/
+│   ├── components/
+│   │   ├── AdminDashboard.js
+│   │   ├── CouponList.js
+│   │   ├── CouponDetail.js
+│   │   └── Navbar.js
+│   ├── styles/
+│   │   └── styles.css
+│   ├── App.js
+│   ├── index.js
+│   └── db.json
+├── package.json
+└── README.md
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Future Improvements
+Authentication: Add user login and admin authentication.
+Advanced Filtering: Enable filtering by categories or expiry dates.
+Pagination: Improve performance by implementing pagination for large coupon lists.
+Analytics: Provide insights into coupon usage and redemption trends.
