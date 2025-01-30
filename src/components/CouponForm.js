@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 function CouponForm({ addCoupon }) {
-  const [coupon, setCoupon] = useState({ code: '', discount: '', expiry: '', brand: '' });
+  const [coupon, setCoupon] = useState({ code: '', discount: '', expiry: '', description: '', brand: '' });
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -11,17 +11,15 @@ function CouponForm({ addCoupon }) {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const newCoupon = { ...coupon };
-
-    fetch('https://phase-2-project-d3jv.onrender.com/coupons', {
+    fetch('http://localhost:5555/coupons', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(newCoupon),
+      body: JSON.stringify(coupon),
     })
       .then((res) => res.json())
       .then((data) => {
-        addCoupon(data); // Update the parent state to show the new coupon
-        setCoupon({ code: '', discount: '', expiry: '', brand: '' }); // Reset form
+        addCoupon(data);
+        setCoupon({ code: '', discount: '', expiry: '', description: '', brand: '' });
       })
       .catch((error) => console.error('Error adding coupon:', error));
   };
@@ -50,6 +48,13 @@ function CouponForm({ addCoupon }) {
         value={coupon.expiry}
         onChange={handleChange}
         placeholder="Expiry Date"
+        required
+      />
+      <textarea
+        name="description"
+        value={coupon.description}
+        onChange={handleChange}
+        placeholder="Description"
         required
       />
       <input

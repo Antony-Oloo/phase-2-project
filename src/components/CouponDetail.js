@@ -10,7 +10,7 @@ function CouponDetail() {
   const [qrCode, setQrCode] = useState("");
 
   useEffect(() => {
-    fetch(`https://phase-2-project-d3jv.onrender.com/coupons/${id}`)
+    fetch(`http://localhost:5555/coupons/${id}`)
       .then(res => {
         if (!res.ok) {
           throw new Error(`Failed to fetch coupon: ${res.statusText}`);
@@ -31,12 +31,13 @@ function CouponDetail() {
   };
 
   return (
-    <div className="coupon-detail-container">
-      <div className="coupon-detail">
+    <div className="centered-page">
+      <div className="coupon-detail centered-content">
         <h3>{coupon.code}</h3>
         <p>{coupon.discount}% off</p>
         <p>Expires: {coupon.expiry}</p>
         <p>{coupon.description}</p>
+        <p>Store: {coupon.store?.name || 'N/A'}</p>
 
         <button onClick={generateRandomCode}>Get Coupon</button>
 
