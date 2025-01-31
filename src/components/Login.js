@@ -8,6 +8,8 @@ function Login({ setIsAdmin }) {
 
   const handleLogin = (e) => {
     e.preventDefault();
+
+    // Simple hardcoded credentials
     if (username === 'admin' && password === 'password') {
       setIsAdmin(true);
       navigate('/admin-dashboard');
@@ -17,7 +19,7 @@ function Login({ setIsAdmin }) {
   };
 
   return (
-    <div className="centered-page">
+    <div className="login-container centered">
       <div className="login-form">
         <h2>Admin Login</h2>
         <form onSubmit={handleLogin}>

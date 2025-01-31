@@ -1,20 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { QRCodeCanvas } from 'qrcode.react'; // Use the named export
 
 function CouponDetail() {
   const { id } = useParams();
   const [coupon, setCoupon] = useState(null);
   const [error, setError] = useState(null);
-  const [showModal, setShowModal] = useState(false);
-  const [qrCode, setQrCode] = useState("");
 
   useEffect(() => {
     fetch(`http://localhost:5555/coupons/${id}`)
       .then(res => {
-        if (!res.ok) {
-          throw new Error(`Failed to fetch coupon: ${res.statusText}`);
-        }
+        if (!res.ok) throw new Error('Failed to fetch coupon details');
         return res.json();
       })
       .then(data => setCoupon(data))
@@ -24,34 +19,13 @@ function CouponDetail() {
   if (error) return <div>Error: {error}</div>;
   if (!coupon) return <div>Loading...</div>;
 
-  const generateRandomCode = () => {
-    const randomCode = Math.random().toString(36).substring(2, 15);
-    setQrCode(randomCode);
-    setShowModal(true);
-  };
-
   return (
-    <div className="centered-page">
-      <div className="coupon-detail centered-content">
-        <h3>{coupon.code}</h3>
-        <p>{coupon.discount}% off</p>
-        <p>Expires: {coupon.expiry}</p>
-        <p>{coupon.description}</p>
-        <p>Store: {coupon.store?.name || 'N/A'}</p>
-
-        <button onClick={generateRandomCode}>Get Coupon</button>
-
-        {showModal && (
-          <div className="modal">
-            <div className="modal-content">
-              <span className="close" onClick={() => setShowModal(false)}>&times;</span>
-              <h4>Scan to Claim Discount</h4>
-              <QRCodeCanvas value={qrCode} size={256} />
-              <p>Your unique code: {qrCode}</p>
-            </div>
-          </div>
-        )}
-      </div>
+    <div className="coupon-detail">
+      <h3>{coupon.code}</h3>
+      <p>{coupon.discount}% off</p>
+      <p>Expires: {coupon.expiry}</p>
+      <p>{coupon.description}</p>
+      <p><strong>Store:</strong> {coupon.store?.name || 'N/A'}</p>
     </div>
   );
 }
